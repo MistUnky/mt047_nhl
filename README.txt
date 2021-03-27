@@ -1,3 +1,5 @@
+Collection of mods and old game version etc that I like to play with
+
 The main game for the Minetest game engine [minetest_game]
 ==========================================================
 

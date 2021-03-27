@@ -165,12 +165,12 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	nobj_webe = nobj_webe or minetest.get_perlin_map(np_webe, chulens)
 	nobj_biome = nobj_biome or minetest.get_perlin_map(np_biome, chulens)
 	
-	local nvals_weba = nobj_weba:get3dMap_flat(minposxyz)
-	local nvals_webb = nobj_webb:get3dMap_flat(minposxyz)
-	local nvals_webc = nobj_webc:get3dMap_flat(minposxyz)
-	local nvals_webd = nobj_webd:get3dMap_flat(minposxyz)
-	local nvals_webe = nobj_webe:get3dMap_flat(minposxyz)
-	local nvals_biome = nobj_biome:get3dMap_flat(minposxyz)
+	local nvals_weba = nobj_weba:get_3d_map_flat(minposxyz)
+	local nvals_webb = nobj_webb:get_3d_map_flat(minposxyz)
+	local nvals_webc = nobj_webc:get_3d_map_flat(minposxyz)
+	local nvals_webd = nobj_webd:get_3d_map_flat(minposxyz)
+	local nvals_webe = nobj_webe:get_3d_map_flat(minposxyz)
+	local nvals_biome = nobj_biome:get_3d_map_flat(minposxyz)
 	
 	local cavbel = {}
 	--local stobel = {}

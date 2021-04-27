@@ -300,6 +300,7 @@ minetest.register_abm({
 			-- Remove node
 			minetest.remove_node(p0)
 			--nodeupdate(p0)
+			minetest.check_for_falling(p0)
 		end
 	end
 })

@@ -1008,6 +1008,36 @@ minetest.register_tool("nether:sword_white", {
 	},
 })
 
+if minetest.get_modpath("toolranks") then
+
+	-- Helper function
+	local function add_tool(name, desc, afteruse)
+
+		minetest.override_item(name, {
+			original_description = desc,
+			description = toolranks.create_description(desc, 0, 1),
+			after_use = afteruse and toolranks.new_afteruse
+		})
+	end
+
+	add_tool("nether:pick_mushroom", "Nether Mushroom Pickaxe", true)
+	add_tool("nether:pick_wood", "Nether Wood Pickaxe", true)
+	add_tool("nether:pick_netherrack", "Netherrack Pickaxe", true)
+	add_tool("nether:pick_netherrack_blue", "Blue Netherrack Pickaxe", true)
+	add_tool("nether:pick_white", "Siwtonic Pickaxe", true)
+	
+	add_tool("nether:sword_netherrack", "Netherrack Sword", true)
+	add_tool("nether:sword_netherrack_blue", "Blue Netherrack Sword", true)
+	add_tool("nether:sword_white", "Siwtonic Sword", true)
+	
+	add_tool("nether:shovel_netherrack", "Netherrack Shovel", true)
+	add_tool("nether:shovel_netherrack_blue", "Blue Netherrack Shovel", true)
+	add_tool("nether:shovel_white", "Siwtonic Shovel", true)
+	
+	add_tool("nether:axe_netherrack", "Netherrack Axe", true)
+	add_tool("nether:axe_netherrack_blue", "Blue Netherrack Axe", true)
+	add_tool("nether:axe_white", "Siwtonic Axe", true)
+end
 
 -- override creative hand
 if minetest.settings:get_bool("creative_mode") then

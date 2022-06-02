@@ -19,3 +19,7 @@ dofile(minetest.get_modpath("default").."/craftitems.lua")
 dofile(minetest.get_modpath("default").."/crafting.lua")
 dofile(minetest.get_modpath("default").."/mapgen.lua")
 dofile(minetest.get_modpath("default").."/player.lua")
+
+minetest.register_on_joinplayer(function(player)
+	player:set_physics_override({sneak_glitch = true, sneak = true, new_move = false})
+end)

@@ -1,0 +1,30 @@
+[submodule "mods/dynamic_liquid"]
+	path = mods/dynamic_liquid
+	url = https://github.com/minetest-mods/dynamic_liquid
+[submodule "mods/magma_conduits"]
+	path = mods/magma_conduits
+	url = https://github.com/minetest-mods/magma_conduits
+[submodule "mods/sumpf"]
+	path = mods/sumpf
+	url = https://github.com/HybridDog/sumpf
+[submodule "mods/netherhd"]
+	path = mods/netherhd
+	url = https://github.com/HybridDog/nether-pack
+[submodule "mods/function_delayer"]
+	path = mods/function_delayer
+	url = https://github.com/HybridDog/function_delayer
+[submodule "mods/riesenpilz"]
+	path = mods/riesenpilz
+	url = https://github.com/HybridDog/riesenpilz
+[submodule "mods/titanium"]
+	path = mods/titanium
+	url = https://github.com/HybridDog/titanium
+[submodule "mods/vector_extras"]
+	path = mods/vector_extras
+	url = https://github.com/HybridDog/vector_extras
+[submodule "mods/glow"]
+	path = mods/glow
+	url = https://github.com/HybridDog/glow-pack
+[submodule "mods/nyanland"]
+	path = mods/nyanland
+	url = https://github.com/hybridDog/nyanland

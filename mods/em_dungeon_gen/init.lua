@@ -93,6 +93,7 @@ minetest.register_on_generated(function(minp, maxp, blockseed)
 
 	-- just for now, so that you can take a look from above :)
 	if minp.y < 20000 then return end
+	if minp.y > 30000 then return end -- make space for nyanland
 	local vm, emin, emax = minetest.get_mapgen_object("voxelmanip")
 	local va = VoxelArea:new{MinEdge=emin, MaxEdge=emax}
 	local data = vm:get_data()

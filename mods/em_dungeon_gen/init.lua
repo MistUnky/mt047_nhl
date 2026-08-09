@@ -28,6 +28,7 @@ end
 ---------------
 
 minetest.register_node("em_dungeon_gen:wall", {
+	description = "EM Wall",
 	drawtype = "glasslike",
 	tiles = {"em_dungeon_gen_wall.png"},
 	is_ground_content = false,
@@ -36,6 +37,7 @@ minetest.register_node("em_dungeon_gen:wall", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 	light_source = 0,--default.LIGHT_MAX,
+	groups = {not_in_creative_inventory=1},
 })
 
 local c_air = minetest.get_content_id("air")

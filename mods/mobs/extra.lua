@@ -36,13 +36,13 @@ function mobs_extra_register_sheeplike(name, hp, textures, textures_shear, shear
 			local item = clicker:get_wielded_item()
 			if item:get_name() == fodder then
 				if not self.tamed then
-					if not minetest.setting_getbool("creative_mode") then
+					if not minetest.settings:get_bool("creative_mode") then
 						item:take_item()
 						clicker:set_wielded_item(item)
 					end
 					self.tamed = true
 				elseif self.naked then
-					if not minetest.setting_getbool("creative_mode") then
+					if not minetest.settings:get_bool("creative_mode") then
 						item:take_item()
 						clicker:set_wielded_item(item)
 					end

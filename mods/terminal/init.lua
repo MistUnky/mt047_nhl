@@ -189,8 +189,9 @@ term.commands = {
 		return output .. "\nWriting \"" .. what .. "\". Enter STOP on a line by itself to finish"
 	end,
 	write = function(output, params, c)
-		return output .. "\nError: No change access"
-		--[[if not c.rw then
+		--return output .. "\nError: No change access"
+		---[[
+		if not c.rw then
 			return output .. "\nError: No write access"
 		end
 		local what, _ = get_cmd_params(params)
@@ -211,8 +212,9 @@ term.commands = {
 		return output .. "\nWriting \"" .. what .. "\". Enter STOP on a line by itself to finish" --]]
 	end,
 	edit = function(output, params, c)
-		return output .. "\nError: No change access"
-		--[[if not c.rw then
+		--return output .. "\nError: No change access"
+		---[[
+		if not c.rw then
 			return output .. "\nError: No write access"
 		end
 		local what, _ = get_cmd_params(params)
@@ -242,8 +244,9 @@ term.commands = {
 		return false --]]
 	end,
 	remove = function(output, params, c)
-		return output .. "\nError: No change access"
-		--[[if not c.rw then
+		--return output .. "\nError: No change access"
+		---[[
+		if not c.rw then
 			return output .. "\nError: No write access"
 		end
 		local meta = minetest.get_meta(c.pos)
@@ -535,7 +538,7 @@ minetest.register_node("terminal:terminal", {
 	description = "Interactive terminal console emulator access interface unit controller",
 	--drawtype = "mesh",
 	mesh = "terminal.obj",
-	groups = {mech = 1, trigger = 1},
+	groups = {mech = 1, trigger = 1, not_in_creative_inventory = 1},
 	tiles = {
 		--{name = "terminal_base.png"},
 		{name = "terminal_idle.png", animation = {type = "vertical_frames", aspect_w = 14, aspect_h = 13, length = 4.0}},

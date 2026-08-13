@@ -358,6 +358,8 @@ function mobs:register_mob(name, def)
 					if p.x > s.x then
 						yaw = yaw+math.pi
 					end
+					local infint = 1/0
+					if (yaw ~= yaw) or yaw == infint then yaw = 0 end
 					self.object:setyaw(yaw)
 					if self.attack.dist > 2 then
 						if not self.v_start then
